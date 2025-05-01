@@ -1,7 +1,8 @@
 import React from 'react';
 import bannerImg from '../Assets/restauranfood.jpg';
-import { BrowserRouter } from 'react-router-dom'
+import { BrowserRouter } from 'react-router-dom';
 import ReactDOM from 'react-dom';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
@@ -12,7 +13,7 @@ const Header = () => {
                     <h3>Chicago</h3>
                     <p>We are a family owned Mediterranean restaurant, 
                     focused on traditional recipes served with a modern twist</p>
-                    <button aria-label='On Click'>Reserve Table</button>
+                    <Link to="/booking"><button aria-label='On Click'>Reserve Table</button></Link>
                 </div>
 
                 <div className='banner-img'>
